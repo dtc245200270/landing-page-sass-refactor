@@ -1,0 +1,68 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.navbar {
+  @include mix.flex-center(space-between, center);
+  padding: 18px 40px;
+  background-color: var.$white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: var.$primary-color;
+    text-decoration: none;
+  }
+
+  .nav-menu {
+    list-style: none;
+    @include mix.flex-center(center, center);
+    gap: 25px;
+
+    a {
+      text-decoration: none;
+      color: var.$text-dark;
+      font-weight: 600;
+      transition: color var.$transition-speed;
+
+      &:hover {
+        color: var.$primary-color;
+      }
+    }
+  }
+
+  @include mix.mobile {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 20px;
+  }
+}
+
+.hero {
+  @include mix.flex-center(center, center, column);
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: var.$white;
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+  }
+
+  .btn-cta {
+    @include mix.button-variant(var.$primary-color, var.$white);
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+}

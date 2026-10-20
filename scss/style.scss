@@ -1,0 +1,19 @@
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mix;
+@use 'layout/header-nav';
+@use 'components/products';
+@use 'components/stats';
+@use 'layout/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var.$font-family;
+}
+
+body {
+  background-color: var.$bg-light;
+  color: var.$text-dark;
+  line-height: 1.6;
+}

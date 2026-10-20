@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tái Cấu Trúc Bằng SASS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Navigation -->
+  <nav class="navbar">
+    <a href="#" class="brand">TechLanding</a>
+    <ul class="nav-menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <li><a href="#stats">Thống kê</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. Header / Hero -->
+  <header class="hero">
+    <h1>Khám Phá Giải Pháp Công Nghệ Tương Lai</h1>
+    <p>Trang web mẫu được tái cấu trúc hoàn chỉnh bằng SASS với kiến trúc phân tách modules, tối ưu hóa tái sử dụng và dễ bảo trì.</p>
+    <a href="#products" class="btn-cta">Xem Sản Phẩm</a>
+  </header>
+
+  <!-- 3. Sản phẩm nổi bật -->
+  <section class="products-section" id="products">
+    <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+    <p class="section-desc">Những thiết bị công nghệ hiện đại hàng đầu phục vụ công việc của bạn</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=500&q=80" alt="Laptop">
+        <h3>Laptop Ultra Pro</h3>
+        <p>Mạnh mẽ, mỏng nhẹ, tối ưu hóa cho tác vụ lập trình và đồ họa chuyên sâu.</p>
+        <span class="price">28.990.000₫</span>
+        <button class="btn-buy">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=500&q=80" alt="Smartphone">
+        <h3>Smartphone X</h3>
+        <p>Màn hình OLED 120Hz siêu nét, camera sắc nét và hiệu năng hàng đầu.</p>
+        <span class="price">19.490.000₫</span>
+        <button class="btn-buy">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Headphone">
+        <h3>Tai Nghe Chống Ồn</h3>
+        <p>Chống ồn chủ động đỉnh cao, thời lượng pin bền bỉ liên tục suốt 30 giờ.</p>
+        <span class="price">4.200.000₫</span>
+        <button class="btn-buy">Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Số liệu thống kê -->
+  <section class="stats-section" id="stats">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h2>15,000+</h2>
+        <p>Khách Hàng Tin Cậy</p>
+      </div>
+      <div class="stat-item">
+        <h2>99.8%</h2>
+        <p>Độ Hài Lòng Dịch Vụ</p>
+      </div>
+      <div class="stat-item">
+        <h2>250+</h2>
+        <p>Đối Tác Toàn Cầu</p>
+      </div>
+      <div class="stat-item">
+        <h2>24/7</h2>
+        <p>Hỗ Trợ Kỹ Thuật</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div>
+        <h4 style="color: #fff; margin-bottom: 6px;">TechLanding</h4>
+        <p>Nền tảng công nghệ dẫn đầu xu hướng tương lai.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Điều khoản</a></li>
+        <li><a href="#">Chính sách</a></li>
+        <li><a href="#">Hỗ trợ</a></li>
+        <li><a href="#">Tuyển dụng</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2026 Đinh Xuân Mạnh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
